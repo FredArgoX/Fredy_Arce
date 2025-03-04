@@ -195,13 +195,13 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start; /*Horizontal*/
-    height: var(--general-height); /* Ensure it takes full container height */
+    /*height: var(--general-height);*/ /* Ensure it takes full container height */
     width: 100%;
     /*border: 1px solid crimson;*/
     margin-top: var(--general-margin);
     font-size: 1.5rem;
     color: var(--color-c);
-    font-weight: 700;
+    font-weight: 500;
 }
 .carousel{
     display: flex;
@@ -235,6 +235,40 @@ main{
     background-color: var(--color-c);
     width: 0%;
     border-radius: 2px;
+}
+
+
+
+.school-section{
+    margin-top: var(--general-margin);
+    display: flex;
+    flex-direction: row;
+    gap: var(--general-margin);
+}
+
+.education-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /*Horizontal*/
+    /*height: var(--general-height);*/ /* Ensure it takes full container height */
+    width: 100%;
+    /*border: 1px solid crimson;*/
+    /*margin-top: var(--general-margin);*/
+    font-size: 1.5rem;
+    /*color: var(--color-c);*/
+    /*font-weight: 700;*/
+}
+.ed1{
+    color: var(--color-b);
+    font-weight: 500;
+}
+.ed2{
+    color: var(--color-d);
+    font-weight: 500;
+}
+.ed3{
+    color: var(--color-c);
+    font-weight: 500;
 }
 /* /////////////////////////////////////////////////////// */
 
