@@ -5,6 +5,7 @@
     --color-c: #1D4ED8;
     --color-d: #606060;
     --color-e: #272727;
+    --color-f: #a0a0a0;
 
     /* General Spacing */
     --general-margin: 15px;
@@ -71,14 +72,26 @@ main{
     "presentation" 
     "description"
     "skills" 
-    "education";
+    "education"
+    "projects";
     grid-gap: var(--common-gap);
 }
-
 #presentation{grid-area: presentation;}
 #description{grid-area: description;}
 #skills{grid-area: skills;}
 #education{grid-area: education;}
+#projects{grid-area: projects;}
+
+/*550px*/
+@media (min-width: 550px){
+    main{
+        grid-template-areas:
+        "presentation presentation"
+        "description description"
+        "skills education"
+        "projects projects";
+    }
+}
 
 .hi{
     font-family: "Roboto Mono", monospace;
@@ -151,6 +164,7 @@ main{
     background-color: var(--color-a);
     clip-path: polygon(100% 0, 100% 100%, 60% 100%, 0% 0%);
     transition: clip-path 0.5s ease;
+    /*border: 1px solid crimson;*/
 }
 .dropdown.open .dropdown-trapezoid{
     clip-path: polygon(100% 0, 100% 100%, 0% 100%, 60% 0%);
@@ -200,7 +214,7 @@ main{
     /*border: 1px solid crimson;*/
     margin-top: var(--general-margin);
     font-size: 1.5rem;
-    color: var(--color-c);
+    color: var(--color-b);
     font-weight: 500;
 }
 .carousel{
@@ -244,6 +258,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: var(--general-margin);
+    width: 100%;
 }
 
 .education-text {
@@ -269,6 +284,82 @@ main{
 .ed3{
     color: var(--color-c);
     font-weight: 500;
+}
+
+.school-text{
+    width: 100%;
+}
+.project-name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*border: 1px solid crimson;*/
+    padding-inline-end: 9px;
+}
+.project-arrow{
+    color: var(--color-b);
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+.dropdown-arrow{
+    color: var(--color-c);
+}
+.dropdown-header .dropdown-arrow{
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 1;
+    margin-right: 0px;
+}
+.dropdown.open .dropdown-arrow{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+.project-details {
+    display: block;
+    color: var(--color-d);
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: transform 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+    text-align: justify;
+}
+
+.project-details.visible {
+    transform: scaleY(1);
+    opacity: 1;
+    height: auto;
+}
+
+.project-arrow {
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.project-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.blue{
+    color: var(--color-c);
 }
 /* /////////////////////////////////////////////////////// */
 
