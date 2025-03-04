@@ -26,6 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const projectArrows = document.querySelectorAll(".project-arrow");
+
+    projectArrows.forEach((arrow) => {
+        arrow.addEventListener("click", () => {
+            const details = arrow.closest(".school-text").querySelector(".project-details");
+            
+            details.classList.toggle("visible");
+            arrow.classList.toggle("rotated");
+        });
+    });
+});
+
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
