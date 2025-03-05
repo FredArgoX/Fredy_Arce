@@ -226,6 +226,7 @@ main{
     scrollbar-width: none;
     -ms-overflow-style: none;
     margin-top: var(--general-margin);
+    align-items: center;
 }
 .carousel::webkit-scrollbar{
     display: none;
@@ -234,7 +235,20 @@ main{
     min-width: 60px;
     height: 60px;
     filter: grayscale(100%);
-    border: 1px solid var(--color-c);
+    transition: filter 0.3s ease;
+    /*border: 1px solid var(--color-c);*/
+}
+#gemini{
+    height: 60px;
+    min-width: auto;
+}
+#colab{
+    min-width: 60px;
+    max-width: 60px;
+    height: auto;
+}
+.icon:hover, .icon:focus, .icon:active {
+    filter: grayscale(0%);
 }
 .progress-bar{
     width: 100%;
