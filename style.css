@@ -247,6 +247,14 @@ main{
     max-width: 60px;
     height: auto;
 }
+#angelicaarteaga{
+    height: 60px;
+    min-width: auto;
+}
+#unam{
+    height: 60px;
+    min-width: auto;
+}
 .icon:hover, .icon:focus, .icon:active {
     filter: grayscale(0%);
 }
