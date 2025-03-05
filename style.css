@@ -38,8 +38,10 @@ body{
 }
 html,
 body {
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 /* /////////////////////////////////////////////////////// */
 /* Header General Style */
@@ -75,6 +77,8 @@ main{
     "education"
     "projects";
     grid-gap: var(--common-gap);
+    flex-grow: 1;
+    overflow: auto;
 }
 #presentation{grid-area: presentation;}
 #description{grid-area: description;}
@@ -385,3 +389,27 @@ main{
 }
 /* /////////////////////////////////////////////////////// */
 
+footer{
+    padding: var(--general-padding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-container{
+    display: flex;
+    flex-direction: row;
+    gap: var(--common-gap);
+}
+.social-icon{
+    background-color: var(--color-a);
+    color: var(--color-c);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+}
+.social-icon:hover,
+.social-icon:focus{
+    background-color: var(--color-c);
+    color: var(--color-a);
+}
