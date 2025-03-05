@@ -105,3 +105,22 @@ linkedinBtn.addEventListener("click", () => {
 xBtn.addEventListener("click", () => {
     window.open("https://x.com/FredyArgoX", "_blank");
 });
+
+const p1 = document.querySelector("#p1");
+const p2 = document.querySelector("#p2");
+const p3 = document.querySelector("#p3");
+const p4 = document.querySelector("#p4");
+
+p1.addEventListener("click", () => {
+    window.open("https://fredargox.github.io/Crypto_Tracker_PLS/", "_blank");
+});
+p2.addEventListener("click", () => {
+    window.open("https://xwebz.github.io/Angelica-Arteaga-Canada-Presentation/", "_blank");
+});
+p3.addEventListener("click", () => {
+    window.open("https://000web.github.io/ILOVEMICHE/menu.html", "_blank");
+});
+p4.addEventListener("click", () => {
+    window.open("https://colab.research.google.com/drive/1E8t1iTsXpNrOxrFK5x2kDRDVEJxckv4-?usp=sharing", "_blank");
+});
+
