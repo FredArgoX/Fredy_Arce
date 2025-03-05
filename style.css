@@ -96,6 +96,15 @@ main{
         "projects projects";
     }
 }
+/*1200px*/
+@media (min-width: 1200px){
+    main{
+        grid-template-areas:
+        "presentation presentation presentation"
+        "description description description"
+        "skills education projects";
+    }
+}
 
 .hi{
     font-family: "Roboto Mono", monospace;
