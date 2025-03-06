@@ -110,6 +110,7 @@ const p1 = document.querySelector("#p1");
 const p2 = document.querySelector("#p2");
 const p3 = document.querySelector("#p3");
 const p4 = document.querySelector("#p4");
+const p5 = document.querySelector("#p5");
 
 p1.addEventListener("click", () => {
     window.open("https://fredargox.github.io/Crypto_Tracker_PLS/", "_blank");
@@ -121,6 +122,9 @@ p3.addEventListener("click", () => {
     window.open("https://000web.github.io/ILOVEMICHE/menu.html", "_blank");
 });
 p4.addEventListener("click", () => {
-    window.open("https://colab.research.google.com/drive/1E8t1iTsXpNrOxrFK5x2kDRDVEJxckv4-?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1qaRy7EYvqZbBwTiBlDP_KXkAEpXJ2DBJ/view?usp=sharing", "_blank");
+});
+p5.addEventListener("click", () => {
+    window.open("https://drive.google.com/file/d/1aes4DJWnVsEarGdMy63CevmZRzSIhBod/view?usp=sharing", "_blank");
 });
 
