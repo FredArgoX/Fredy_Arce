@@ -122,9 +122,9 @@ p3.addEventListener("click", () => {
     window.open("https://000web.github.io/ILOVEMICHE/menu.html", "_blank");
 });
 p4.addEventListener("click", () => {
-    window.open("https://drive.google.com/file/d/1qaRy7EYvqZbBwTiBlDP_KXkAEpXJ2DBJ/view?usp=sharing", "_blank");
+    window.open("https://colab.research.google.com/drive/1qaRy7EYvqZbBwTiBlDP_KXkAEpXJ2DBJ", "_blank");
 });
 p5.addEventListener("click", () => {
-    window.open("https://drive.google.com/file/d/1aes4DJWnVsEarGdMy63CevmZRzSIhBod/view?usp=sharing", "_blank");
+    window.open("https://colab.research.google.com/drive/1aes4DJWnVsEarGdMy63CevmZRzSIhBod#scrollTo=aodN1SIT4Ndf", "_blank");
 });
 
