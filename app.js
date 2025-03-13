@@ -101,7 +101,7 @@ githubBtn.addEventListener("click", () => {
     window.open("https://github.com/FredArgoX", "_blank");
 });
 linkedinBtn.addEventListener("click", () => {
-    window.open("https://www.linkedin.com/in/fredy-arce-gonzalez-x", "_blank");
+    window.open("https://www.linkedin.com/in/fredy-arce-data-science/", "_blank");
 });
 xBtn.addEventListener("click", () => {
     window.open("https://x.com/FredyArgoX", "_blank");
