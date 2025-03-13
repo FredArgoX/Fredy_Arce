@@ -1,3 +1,4 @@
+
 fetch("./assets/menu.svg")
     .then(response => response.text())
     .then(data => {
