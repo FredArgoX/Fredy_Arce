@@ -104,7 +104,7 @@ linkedinBtn.addEventListener("click", () => {
     window.open("https://www.linkedin.com/in/fredy-arce-data-science/", "_blank");
 });
 xBtn.addEventListener("click", () => {
-    window.open("https://x.com/FredyArgoX", "_blank");
+    window.open("./index.html", "_blank");
 });
 
 const p1 = document.querySelector("#p1");
